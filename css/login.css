@@ -1,14 +1,8 @@
-@font-face {
-  font-family: "SpoqaHanSansNeo-Regular";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff")
-    format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 
 body {
   margin: initial;
-  font-family: "SpoqaHanSansNeo-Regular", "Sans-serif";
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
 }
 
 h1,
@@ -20,13 +14,15 @@ li {
   padding: initial;
 }
 
-input {
+input,
+fieldset {
   padding: initial;
   border: initial;
 }
 
 h1,
-h2 {
+h2,
+strong {
   font: inherit;
 }
 
@@ -73,6 +69,7 @@ label {
 
 /* header */
 .header {
+  font-weight: 500;
   text-align: center;
   padding: 20px 188px 18px;
   border-bottom: 1px solid #c4c4c4;
@@ -112,7 +109,7 @@ label {
   border-radius: 5px;
   padding-left: 16px;
   font-size: 16px;
-  font-family: "SpoqaHanSansNeo-Regular", "Sans-serif";
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
 }
 
 .alert {
@@ -137,6 +134,7 @@ label {
 }
 
 .label-hold {
+  font-weight: 500;
   color: #767676;
   position: relative;
 }
@@ -158,17 +156,12 @@ label {
   position: absolute;
   left: 6px;
   top: 8px;
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
   background-image: url(../images/check.svg);
   background-repeat: no-repeat;
-  background-size: 10px;
+  background-size: 12px;
   background-position: 0 0;
-  /* border: 2px solid #fff;
-  border-top: 0;
-  border-left: 0;
-  transform: rotate(45deg);
-  transform-origin: 25% 25%; */
 }
 
 .label-hold:focus {
@@ -250,6 +243,7 @@ label {
   text-align: center;
   line-height: 50px;
   color: #767676;
+  font-weight: 500;
   position: relative;
 }
 
@@ -306,10 +300,10 @@ label {
 
 /* 닫기 버튼 */
 .close-btn {
-  width: 16px;
-  height: 16px;
+  width: 40px;
+  height: 40px;
   position: absolute;
-  top: 22px;
-  right: 24px;
-  background: url(../images/close.svg) center / cover no-repeat;
+  top: 12px;
+  right: 12px;
+  background: url(../images/close.svg) center / 16px no-repeat;
 }
